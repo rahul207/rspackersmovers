@@ -28,7 +28,6 @@ WORKDIR /app
 COPY --from=build --chown=node:node /app/node_modules ./node_modules
 COPY --from=build --chown=node:node /app/apps/api/dist ./apps/api/dist
 COPY --from=build --chown=node:node /app/apps/web/dist ./apps/web/dist
-COPY --from=build --chown=node:node /app/config ./config
 COPY --from=build --chown=node:node /app/package.json ./package.json
 
 # XLSX files and rotating backups live here; mount a volume to persist them.

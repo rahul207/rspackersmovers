@@ -1,5 +1,6 @@
 node_modules/
 dist/
+release/
 coverage/
 .env
 .env.*
@@ -16,3 +17,4 @@ storage/backups/
 storage/e2e/
 storage/.tmp-*
 !storage/.gitkeep
+rs-packers-movers-release.zip

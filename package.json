@@ -26,7 +26,8 @@
     "assets:logo": "node scripts/process-logo.mjs",
     "assets:founder": "node scripts/process-founder-photo.mjs",
     "audit:deps": "npm audit --omit=dev --audit-level=high",
-    "prepare": "node scripts/prepare.mjs"
+    "prepare": "node scripts/prepare.mjs",
+    "package": "node scripts/package-release.mjs"
   },
   "lint-staged": {
     "*.{ts,tsx,js,mjs,cjs}": [
