@@ -1,0 +1,111 @@
+{
+  "generatedBy": "scripts/process-logo.mjs",
+  "source": {
+    "file": "logo.png",
+    "sha256": "efeb7e3579ba88cdbeb7d80311243f80ef5936767255889a9dd228709648c01f",
+    "format": "png",
+    "width": 800,
+    "height": 758
+  },
+  "background": "kept (already transparent or not a uniform background)",
+  "isVector": false,
+  "note": "Raster output only. For a true vector logo, ask a designer to redraw/export SVG from the original artwork.",
+  "warnings": [
+    "Background was not removed automatically. If a transparent logo is required, supply one or have a designer export it."
+  ],
+  "outputs": [
+    {
+      "file": "logo-1x.png",
+      "bytes": 7629,
+      "usage": "Header/footer logo at 1x (display height 48px)",
+      "width": 51,
+      "height": 48,
+      "upscaled": false
+    },
+    {
+      "file": "logo-1x.webp",
+      "bytes": 1416,
+      "usage": "Header/footer logo at 1x (display height 48px)",
+      "width": 51,
+      "height": 48,
+      "upscaled": false
+    },
+    {
+      "file": "logo-2x.png",
+      "bytes": 27738,
+      "usage": "Header/footer logo at 2x (display height 48px)",
+      "width": 101,
+      "height": 96,
+      "upscaled": false
+    },
+    {
+      "file": "logo-2x.webp",
+      "bytes": 3126,
+      "usage": "Header/footer logo at 2x (display height 48px)",
+      "width": 101,
+      "height": 96,
+      "upscaled": false
+    },
+    {
+      "file": "logo-4x.png",
+      "bytes": 97809,
+      "usage": "Header/footer logo at 4x (display height 48px)",
+      "width": 203,
+      "height": 192,
+      "upscaled": false
+    },
+    {
+      "file": "logo-4x.webp",
+      "bytes": 6316,
+      "usage": "Header/footer logo at 4x (display height 48px)",
+      "width": 203,
+      "height": 192,
+      "upscaled": false
+    },
+    {
+      "file": "favicon-16.png",
+      "bytes": 655,
+      "usage": "Browser favicon 16x16"
+    },
+    {
+      "file": "favicon-32.png",
+      "bytes": 2396,
+      "usage": "Browser favicon 32x32"
+    },
+    {
+      "file": "favicon-48.png",
+      "bytes": 4877,
+      "usage": "Browser favicon 48x48"
+    },
+    {
+      "file": "favicon.ico",
+      "bytes": 7982,
+      "usage": "Legacy favicon (16/32/48, PNG-compressed)"
+    },
+    {
+      "file": "apple-touch-icon.png",
+      "bytes": 48968,
+      "usage": "iOS home-screen icon (opaque)"
+    },
+    {
+      "file": "icon-192.png",
+      "bytes": 60342,
+      "usage": "PWA / Android icon 192"
+    },
+    {
+      "file": "icon-512.png",
+      "bytes": 325292,
+      "usage": "PWA / Android icon 512"
+    },
+    {
+      "file": "icon-maskable-512.png",
+      "bytes": 184330,
+      "usage": "PWA maskable icon (logo inside the safe zone)"
+    },
+    {
+      "file": "og-image.png",
+      "bytes": 302265,
+      "usage": "Open Graph / Twitter share image 1200x630 (logo centred on a light neutral card)"
+    }
+  ]
+}

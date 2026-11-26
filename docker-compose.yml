@@ -1,0 +1,39 @@
+# Production-style run:  docker compose up --build -d
+# Requirements: a `.env` file (copy .env.example) with real secrets and an https PUBLIC_SITE_URL.
+# Local trial without https: set NODE_ENV=development in your shell for this command.
+services:
+  app:
+    build: .
+    image: rs-packers-movers:latest
+    restart: unless-stopped
+    ports:
+      - '${PORT:-3000}:3000'
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      SERVE_WEB: 'true'
+      PORT: '3000'
+      TRUST_PROXY: ${TRUST_PROXY:-0}
+    volumes:
+      - ./storage:/app/storage
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'node',
+          '-e',
+          "fetch('http://127.0.0.1:3000/api/v1/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s

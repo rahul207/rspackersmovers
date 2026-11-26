@@ -1,0 +1,18 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+.vite/
+playwright-report/
+test-results/
+.DS_Store
+
+# Generated runtime data (personal data) - never commit
+storage/*.xlsx
+storage/backups/
+storage/e2e/
+storage/.tmp-*
+!storage/.gitkeep

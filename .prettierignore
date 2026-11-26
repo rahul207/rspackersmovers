@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+package-lock.json
+storage
+playwright-report
+test-results
+assets/original
+apps/web/public/brand
