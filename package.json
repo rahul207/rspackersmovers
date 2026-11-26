@@ -26,7 +26,7 @@
     "assets:logo": "node scripts/process-logo.mjs",
     "assets:founder": "node scripts/process-founder-photo.mjs",
     "audit:deps": "npm audit --omit=dev --audit-level=high",
-    "prepare": "node scripts/prepare.mjs",
+    "prepare": "node -e \"import('node:fs').then(fs => fs.existsSync('scripts/prepare.mjs') && import('./scripts/prepare.mjs'))\"",
     "package": "node scripts/package-release.mjs"
   },
   "lint-staged": {
